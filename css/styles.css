@@ -839,6 +839,7 @@ body.loaded .hero-photo-three {
 
 .video-cover {
   width: 100%;
+  aspect-ratio: 1 / 1;
 
   display: block;
 
@@ -846,6 +847,8 @@ body.loaded .hero-photo-three {
   padding: 0.45rem;
 
   border: 0;
+
+  overflow: hidden;
 
   background: var(--white);
 
@@ -861,14 +864,13 @@ body.loaded .hero-photo-three {
   appearance: none;
 }
 
-
 .video-cover img {
   width: 100%;
-  height: auto;
+  height: 100%;
 
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
 }
-
 
 .video-cover:hover {
   transform: translateY(-4px);
