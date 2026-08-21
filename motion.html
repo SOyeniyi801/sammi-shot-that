@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Motion | Sammi Shot That</title>
+
+  <meta
+    name="description"
+    content="Event recap videos and short-form content by Atlanta photographer and content creator Sammi Shot That."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chango&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a href="index.html" class="logo">
+          Sammi Shot That
+        </a>
+    
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="motion.html" class="nav-link">Motion</a>
+          <a href="caught.html" class="nav-link">Caught</a>
+          <a href="book.html" class="nav-link">Book</a>
+        </nav>
+    
+        <button
+        type="button"
+          class="menu-toggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+    
+      </header>
+
+
+  <main>
+
+    <section class="motion-intro">
+      <h1>Motion</h1>
+
+      <p>
+        Short-form event content capturing the energy,
+        people and moments beyond the still frame.
+      </p>
+    </section>
+
+
+    <section class="motion-grid">
+
+      <!-- LAKOUFET -->
+      <article class="motion-project">
+
+        <button
+          class="video-cover"
+          data-video="videos/lakoufet.mp4"
+          aria-label="Play LAKOUFET event recap"
+        >
+          <img
+            src="images/lakoufet-cover.jpg"
+            alt="LAKOUFET event recap"
+          >
+        </button>
+
+        <div class="project-meta">
+          <div>
+            <h2>LAKŌUFET</h2>
+            <p>Event Recap</p>
+          </div>
+
+          <p class="project-year">2026</p>
+        </div>
+
+      </article>
+
+
+      <!-- RUM ISLAND -->
+      <article class="motion-project">
+
+        <button
+          class="video-cover"
+          data-video="videos/rum-island.mp4"
+          aria-label="Play Rum Island Festival recap"
+        >
+          <img
+            src="images/rum-island-cover.jpg"
+            alt="Rum Island Festival event recap"
+          >
+        </button>
+
+        <div class="project-meta">
+          <div>
+            <h2>Rum Island Festival</h2>
+            <p>Event Recap</p>
+          </div>
+
+          <p class="project-year">2026</p>
+        </div>
+
+      </article>
+
+
+      <!-- CHEF SHOWDOWN -->
+      <article class="motion-project">
+
+        <button
+          class="video-cover"
+          data-video="videos/chef-showdown.mp4"
+          aria-label="Play Chef Showdown event recap"
+        >
+          <img
+            src="images/chef-showdown-cover.jpg"
+            alt="Chef Showdown event recap"
+          >
+        </button>
+
+        <div class="project-meta">
+          <div>
+            <h2>Chef Showdown</h2>
+            <p>Event Recap</p>
+          </div>
+
+          <p class="project-year">2026</p>
+        </div>
+
+      </article>
+
+    </section>
+
+  </main>
+
+
+  <!-- PLAY CURSOR -->
+  <div class="video-cursor" aria-hidden="true">
+    Play
+  </div>
+
+
+  <!-- VIDEO LIGHTBOX -->
+  <div
+    class="video-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Video player"
+    aria-hidden="true"
+  >
+
+    <button
+      class="video-close"
+      aria-label="Close video"
+    >
+      ×
+    </button>
+
+    <div class="video-lightbox-content">
+
+      <video
+        class="lightbox-video"
+        controls
+        playsinline
+      ></video>
+
+    </div>
+
+  </div>
+
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

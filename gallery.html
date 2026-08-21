@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sammi Shot That | Atlanta Photographer & Content Creator</title>
+
+    <meta
+      name="description"
+      content="Atlanta-based photographer and content creator capturing events, festivals, concerts, culture, and the moments in between."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chango&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+
+      <a href="index.html" class="logo">
+        Sammi Shot That
+      </a>
+  
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="motion.html" class="nav-link">Motion</a>
+        <a href="caught.html" class="nav-link">Caught</a>
+        <a href="book.html" class="nav-link">Book</a>
+      </nav>
+  
+      <button
+      type="button"
+        class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+  
+    </header>
+
+    <main>
+      <section class="gallery-intro">
+        <h1>Gallery</h1>
+
+        <p>
+          Event, festival and concert photography capturing people, culture and
+          everything happening in between.
+        </p>
+      </section>
+
+      <section class="gallery" aria-label="Photography portfolio">
+        <button class="gallery-item" data-index="0">
+          <img
+            src="images/photo-01.jpg"
+            alt="Event photography by Sammi Shot That"
+            loading="eager"
+          />
+        </button>
+
+        <button class="gallery-item" data-index="1">
+          <img
+            src="images/photo-02.jpg"
+            alt="Festival photography by Sammi Shot That"
+            loading="eager"
+          />
+        </button>
+
+        <button class="gallery-item" data-index="2">
+          <img
+            src="images/photo-03.jpg"
+            alt="Event photography by Sammi Shot That"
+            loading="lazy"
+          />
+        </button>
+
+        <button class="gallery-item" data-index="3">
+          <img
+            src="images/photo-04.jpg"
+            alt="Concert photography by Sammi Shot That"
+            loading="lazy"
+          />
+        </button>
+
+        <button class="gallery-item" data-index="4">
+          <img
+            src="images/photo-05.jpg"
+            alt="Festival photography by Sammi Shot That"
+            loading="lazy"
+          />
+        </button>
+
+        <button class="gallery-item" data-index="5">
+          <img
+            src="images/photo-06.jpg"
+            alt="Event photography by Sammi Shot That"
+            loading="lazy"
+          />
+        </button>
+
+        <button class="gallery-item" data-index="6">
+          <img
+            src="images/photo-07.jpg"
+            alt="Portrait photography by Sammi Shot That"
+            loading="lazy"
+          />
+        </button>
+
+        <button class="gallery-item" data-index="7">
+          <img
+            src="images/photo-08.jpg"
+            alt="Concert photography by Sammi Shot That"
+            loading="lazy"
+          />
+        </button>
+
+        <button class="gallery-item" data-index="8">
+          <img
+            src="images/photo-09.jpg"
+            alt="Event photography by Sammi Shot That"
+            loading="lazy"
+          />
+        </button>
+      </section>
+    </main>
+
+    <!-- Custom image cursor -->
+    <div class="image-cursor" aria-hidden="true">Enlarge</div>
+
+    <!-- Lightbox -->
+    <div
+      class="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Photography viewer"
+      aria-hidden="true"
+    >
+      <button class="lightbox-close" aria-label="Close image">×</button>
+
+      <button class="lightbox-arrow lightbox-prev" aria-label="Previous image">
+        ←
+      </button>
+
+      <div class="lightbox-content">
+        <img src="" alt="" class="lightbox-image" />
+
+        <div class="lightbox-counter">
+          <span class="current-image">01</span>
+          /
+          <span class="total-images">09</span>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        class="lightbox-arrow lightbox-next"
+        aria-label="Next image"
+      >
+        →
+      </button>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

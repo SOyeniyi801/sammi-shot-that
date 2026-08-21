@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Book | Sammi Shot That</title>
+
+  <meta
+    name="description"
+    content="Book Sammi Shot That for photography and content creation in Atlanta and beyond."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chango&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a href="index.html" class="logo">
+          Sammi Shot That
+        </a>
+    
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="motion.html" class="nav-link">Motion</a>
+          <a href="caught.html" class="nav-link">Caught</a>
+          <a href="book.html" class="nav-link">Book</a>
+        </nav>
+    
+        <button
+        type="button"
+          class="menu-toggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+    
+      </header>
+
+
+  <main class="book-page">
+
+    <section class="book-layout">
+
+      <!-- INTRO -->
+
+      <div class="book-intro">
+
+        <p class="book-eyebrow">
+          Have something worth capturing?
+        </p>
+
+        <h1>
+          Let's make<br>
+          something <span>good.</span>
+        </h1>
+
+        <p class="book-description">
+          Events, festivals, portraits or content — tell me
+          what you're working on and what you need captured.
+        </p>
+
+        <div class="book-services">
+          <span>Photography</span>
+          <span>Event Content</span>
+          <span>Behind the Scenes</span>
+        </div>
+
+      </div>
+
+
+      <!-- FORM -->
+
+      <div class="inquiry-wrap">
+
+        <!--
+          Replace action="" with your form provider endpoint.
+        -->
+
+        <form
+          class="inquiry-form"
+          action=""
+          method="POST"
+        >
+
+          <div class="form-field">
+            <label for="name">Your Name</label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            >
+          </div>
+
+
+          <div class="form-field">
+            <label for="email">Email</label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+
+          <div class="form-field">
+            <label for="project-type">
+              What are we shooting?
+            </label>
+
+            <select
+              id="project-type"
+              name="project-type"
+              required
+            >
+              <option value="" disabled selected>
+                Select one
+              </option>
+
+              <option value="event-photography">
+                Event Photography
+              </option>
+
+              <option value="portrait-photography">
+                Portrait Photography
+              </option>
+
+              <option value="event-content">
+                Event Content
+              </option>
+
+              <option value="photo-content">
+                Photography + Content
+              </option>
+
+              <option value="other">
+                Something Else
+              </option>
+            </select>
+          </div>
+
+
+          <div class="form-row">
+
+            <div class="form-field">
+              <label for="date">
+                Event / Shoot Date
+              </label>
+
+              <input
+                type="date"
+                id="date"
+                name="date"
+              >
+            </div>
+
+
+            <div class="form-field">
+              <label for="location">
+                Location
+              </label>
+
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Atlanta, GA"
+              >
+            </div>
+
+          </div>
+
+
+          <div class="form-field">
+            <label for="message">
+              Tell me about it
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="What's happening? What do you need captured?"
+              required
+            ></textarea>
+          </div>
+
+
+          <button
+            type="submit"
+            class="submit-button"
+          >
+            Send Inquiry
+            <span aria-hidden="true">↗</span>
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
