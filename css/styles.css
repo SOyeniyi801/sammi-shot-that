@@ -1989,7 +1989,7 @@ body.loaded .hero-photo-three {
 
   .book-intro h1 {
     font-size:
-      clamp(2.7rem, 14vw, 4.5rem);
+      clamp(2.7rem, 10vw, 4.5rem);
   }
 
 
