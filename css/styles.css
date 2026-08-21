@@ -2016,8 +2016,8 @@ body.loaded .hero-photo-three {
 
 
   .footer-main h2 {
-    font-size:
-      clamp(2.8rem, 13vw, 4.5rem);
+    font-size: clamp(2rem, 8vw, 3rem);
+    line-height: 1;
   }
 
 
