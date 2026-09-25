@@ -2441,11 +2441,9 @@ body.loaded .hero-photo-three {
 
   font-family: var(--display);
 
-  font-size:
-    clamp(4.5rem, 11vw, 11rem);
+  font-size: clamp(2rem, 4vw, 3.5rem);
 
-  line-height: 0.84;
-  letter-spacing: -0.03em;
+  line-height: 1;
 }
 
 
@@ -2532,10 +2530,9 @@ body.loaded .hero-photo-three {
 
   font-family: var(--display);
 
-  font-size:
-    clamp(2.7rem, 6vw, 6.5rem);
+  font-size: clamp(2rem, 4vw, 3.5rem);
 
-  line-height: 0.94;
+  line-height: 1;
 }
 
 
@@ -2627,10 +2624,9 @@ body.loaded .hero-photo-three {
 .recent-project-summary p {
   margin: 0;
 
-  font-size:
-    clamp(1.15rem, 2vw, 1.8rem);
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
 
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 
@@ -2883,10 +2879,10 @@ body.loaded .hero-photo-three {
   }
 
 
-  .recent-intro h1 {
+  /* .recent-intro h1 {
     font-size:
       clamp(4rem, 20vw, 6rem);
-  }
+  } */
 
 
   .recent-intro-copy {
@@ -2906,8 +2902,7 @@ body.loaded .hero-photo-three {
 
 
   .recent-project-title h2 {
-    font-size:
-      clamp(2.6rem, 13vw, 4rem);
+    font-size: clamp(2rem, 9vw, 3rem);
   }
 
 
@@ -2929,12 +2924,6 @@ body.loaded .hero-photo-three {
     margin:
       4rem
       0;
-  }
-
-
-  .recent-project-summary p {
-    font-size:
-      clamp(1.05rem, 5vw, 1.35rem);
   }
 
 
