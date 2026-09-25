@@ -1,407 +1,324 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Sammi Shot That | Photographer + Multimedia Content Creator</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <title>Sammi Shot That | Photographer + Multimedia Content Creator</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
-  <meta
-    name="description"
-    content="Sammi Shot That is an Atlanta-based photographer and multimedia content creator capturing events, festivals, portraits and everything happening in between."
-  >
+    <meta
+      name="description"
+      content="Sammi Shot That is an Atlanta-based photographer and multimedia content creator capturing events, festivals, portraits and everything happening in between."
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Chango&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chango&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- HEADER -->
 
-  <!-- HEADER -->
+    <header class="site-header">
+      <a href="index.html" class="logo"> Sammi Shot That </a>
 
-  <header class="site-header">
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="motion.html" class="nav-link">Motion</a>
+        <a href="recent-work.html" class="nav-link" >Recent Work</a>
+        <a href="caught.html" class="nav-link">Caught</a>
+        <a href="book.html" class="nav-link">Book</a>
+      </nav>
 
-    <a href="index.html" class="logo">
-      Sammi Shot That
-    </a>
+      <button
+        type="button"
+        class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+    </header>
 
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html" class="nav-link active">Home</a>
-      <a href="gallery.html" class="nav-link">Gallery</a>
-      <a href="motion.html" class="nav-link">Motion</a>
-      <a href="caught.html" class="nav-link">Caught</a>
-      <a href="book.html" class="nav-link">Book</a>
-    </nav>
-
-    <button
-    type="button"
-      class="menu-toggle"
-      aria-label="Open navigation"
-      aria-expanded="false"
-    >
-      Menu
-    </button>
-
-  </header>
-
-
-  <main>
-
-    <!-- ==========================================
+    <main>
+      <!-- ==========================================
          HERO
     =========================================== -->
 
-    <section class="home-hero">
+      <section class="home-hero">
+        <div class="hero-copy">
+          <h1>
+            You see<br />
+            those pics?<br />
+            Yeah, I<br />
+            shot that.
+          </h1>
 
-      <div class="hero-copy">
+          <div class="hero-identity">
+            <p>
+              Sammi — Atlanta-based photographer + multimedia content creator.
+            </p>
 
-        <h1>
-          You see<br>
-          those pics?<br>
-          Yeah, I<br>
-          shot that.
-        </h1>
-
-        <div class="hero-identity">
-          <p>
-            Sammi — Atlanta-based photographer
-            + multimedia content creator.
-          </p>
-
-          <a href="gallery.html" class="text-link">
-            Explore what I shot
-            <span aria-hidden="true">↘</span>
-          </a>
+            <a href="gallery.html" class="text-link">
+              Explore what I shot
+              <span aria-hidden="true">↘</span>
+            </a>
+          </div>
         </div>
 
-      </div>
+        <!-- PHOTO PILE -->
 
+        <div
+          class="hero-photos"
+          aria-label="Selected photography by Sammi Shot That"
+        >
+          <figure class="hero-photo hero-photo-one">
+            <img
+              src="assets/home/sammi-shot-that-atlanta-event-photographer-01.jpg"
+              alt="Photography by Sammi Shot That"
+            />
+          </figure>
 
-      <!-- PHOTO PILE -->
+          <figure class="hero-photo hero-photo-two">
+            <img
+              src="assets/home/sammi-shot-that-atlanta-festival-photographer-02.jpg"
+              alt="Photography by Sammi Shot That"
+            />
+          </figure>
 
-      <div
-        class="hero-photos"
-        aria-label="Selected photography by Sammi Shot That"
-      >
+          <figure class="hero-photo hero-photo-three">
+            <img
+              src="assets/home/sammi-shot-that-atlanta-festival-photographer-03.jpg"
+              alt="Photography by Sammi Shot That"
+            />
+          </figure>
+        </div>
 
-        <figure class="hero-photo hero-photo-one">
-          <img
-            src="assets/home/sammi-shot-that-atlanta-event-photographer-01.jpg"
-            alt="Photography by Sammi Shot That"
-          >
-        </figure>
+        <span class="scroll-note"> Scroll to see more ↓ </span>
+      </section>
 
-        <figure class="hero-photo hero-photo-two">
-          <img
-            src="assets/home/sammi-shot-that-atlanta-festival-photographer-02.jpg"
-            alt="Photography by Sammi Shot That"
-          >
-        </figure>
-
-        <figure class="hero-photo hero-photo-three">
-          <img
-            src="assets/home/sammi-shot-that-atlanta-festival-photographer-03.jpg"
-            alt="Photography by Sammi Shot That"
-          >
-        </figure>
-
-      </div>
-
-
-      <span class="scroll-note">
-        Scroll to see more ↓
-      </span>
-
-    </section>
-
-
-
-    <!-- ==========================================
+      <!-- ==========================================
          MINI ABOUT
     =========================================== -->
 
-    <section class="home-about">
+      <section class="home-about">
+        <div class="home-about-statement">
+          <p>I like to catch</p>
+          <p>people being people.</p>
+        </div>
 
-      <div class="home-about-statement">
-        <p>I like to catch</p>
-        <p>people being people.</p>
-      </div>
+        <div class="home-about-content">
+          <div class="home-about-image">
+            <span class="home-sammi-type" aria-hidden="true"> Sammi </span>
 
+            <div class="home-about-photo">
+              <img
+                src="assets/home/sammi-shot-that-about-me-pic.jpeg"
+                alt="Sammi with her camera"
+              />
+            </div>
 
-      <div class="home-about-content">
-
-        <div class="home-about-image">
-
-          <span class="home-sammi-type" aria-hidden="true">
-            Sammi
-          </span>
-
-          <div class="home-about-photo">
-            <img
-              src="assets/home/sammi-shot-that-about-me-pic.jpeg"
-              alt="Sammi with her camera"
-            >
+            <span class="home-photo-note"> ATLANTA, GA </span>
           </div>
 
-          <span class="home-photo-note">
-            ATLANTA, GA
-          </span>
-
-        </div>
-
-
-        <div class="home-about-copy">
-
-          <p>
-            I'm Sammi, an Atlanta-based photographer and multimedia
-            content creator drawn to the people, culture and little
-            moments that make an experience feel alive.
-          </p>
-
-          <p>
-            From festivals and live events to portraits,
-            behind-the-scenes moments and short-form content,
-            I capture what it felt like to be there.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <!-- CAPABILITIES -->
-
-      <div class="home-details">
-
-        <div class="home-detail">
-          <span>01</span>
-
-          <div>
-            <h2>Photography</h2>
-            <p>Events / Festivals / Portraits</p>
+          <div class="home-about-copy">
+            <p>
+              Hi, I’m Sammi, an Atlanta-based photographer, content creator, and
+              video editor who enjoys capturing the real moments in life.
+            </p>
+            <p>
+              Whether I’m shooting a festival or conference, capturing
+              behind-the-scenes footage, or editing a story together, I want
+              whoever’s watching to feel like they were there—or wish they had
+              been.
+            </p>
+            <p>Currently booking new video editing clients.</p>
           </div>
         </div>
 
+        <!-- CAPABILITIES -->
 
-        <div class="home-detail">
-          <span>02</span>
+        <div class="home-details">
+          <div class="home-detail">
+            <span>01</span>
 
-          <div>
-            <h2>Content</h2>
-            <p>BTS / Recaps / Short Form</p>
+            <div>
+              <h2>Photography</h2>
+              <p>Events / Festivals / Portraits</p>
+            </div>
+          </div>
+
+          <div class="home-detail">
+            <span>02</span>
+
+            <div>
+              <h2>Content</h2>
+              <p>BTS / Recaps / Editing</p>
+            </div>
+          </div>
+
+          <div class="home-detail">
+            <span>03</span>
+
+            <div>
+              <h2>Based</h2>
+              <p>Atlanta, Georgia</p>
+            </div>
           </div>
         </div>
+      </section>
 
-
-        <div class="home-detail">
-          <span>03</span>
-
-          <div>
-            <h2>Based</h2>
-            <p>Atlanta, Georgia</p>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
- 
-    <!-- ==========================================
+      <!-- ==========================================
      FEATURED WORK
 =========================================== -->
 
-<section class="featured">
+      <section class="featured">
+        <p class="featured-label">Where I've Been featured</p>
 
-  <p class="featured-label">
-    Where I've Been featured
-  </p>
+        <div class="featured-layout">
+          <!-- COPY -->
 
-  <div class="featured-layout">
+          <div class="featured-copy">
+            <h2>Bossip</h2>
 
-    <!-- COPY -->
+            <p class="featured-description">
+              Photography featured in Bossip · 2026
+            </p>
 
-    <div class="featured-copy">
+            <a
+              href="https://bossip.com/4605905/pretty-vee-hosts-rum-island-festival/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-link"
+            >
+              View Feature
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
 
-      <h2>
-        Bossip
-      </h2>
+          <!-- SCREENSHOT MOCKUPS -->
 
-      <p class="featured-description">
-        Photography featured in Bossip · 2026
-      </p>
+          <div class="featured-mockups">
+            <figure class="feature-mockup feature-mockup-one">
+              <img
+                src="assets/home/sammi-shot-that-bossip-one.png"
+                alt="Bossip article featuring photography by Sammi Shot That"
+                loading="lazy"
+              />
+            </figure>
 
-      <a
-        href="https://bossip.com/4605905/pretty-vee-hosts-rum-island-festival/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="text-link"
-      >
-        View Feature
-        <span aria-hidden="true">↗</span>
-      </a>
+            <figure class="feature-mockup feature-mockup-two">
+              <img
+                src="assets/home/sammi-shot-that-bossip-two.png"
+                alt="Sammi Shot That photography featured on Bossip"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
 
-    </div>
-
-
-    <!-- SCREENSHOT MOCKUPS -->
-
-    <div class="featured-mockups">
-
-      <figure class="feature-mockup feature-mockup-one">
-
-        <img
-          src="assets/home/sammi-shot-that-bossip-one.png"
-          alt="Bossip article featuring photography by Sammi Shot That"
-          loading="lazy"
-        >
-
-      </figure>
-
-
-      <figure class="feature-mockup feature-mockup-two">
-
-        <img
-          src="assets/home/sammi-shot-that-bossip-two.png"
-          alt="Sammi Shot That photography featured on Bossip"
-          loading="lazy"
-        >
-
-      </figure>
-
-    </div>
-
-  </div>
-
-</section>
-
-    <!-- ==========================================
+      <!-- ==========================================
          SELECTED WORK
     =========================================== -->
 
-    <section class="selected-work">
+      <section class="selected-work">
+        <div class="selected-heading">
+          <h2>
+            Some things<br />
+            I caught.
+          </h2>
 
-      <div class="selected-heading">
+          <a href="gallery.html" class="text-link">
+            View the gallery
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
 
-        <h2>
-          Some things<br>
-          I caught.
-        </h2>
+        <div class="selected-grid">
+          <figure class="selected-image selected-one">
+            <img
+              src="assets/home/sammi-shot-that-atlanta-festival-photographer-04.jpg"
+              alt="Selected photography by Sammi Shot That"
+              loading="lazy"
+            />
+          </figure>
 
-        <a href="gallery.html" class="text-link">
-          View the gallery
-          <span aria-hidden="true">↗</span>
-        </a>
+          <figure class="selected-image selected-two">
+            <img
+              src="assets/home/sammi-shot-that-atlanta-festival-photographer-06.jpg"
+              alt="Selected photography by Sammi Shot That"
+              loading="lazy"
+            />
+          </figure>
 
-      </div>
+          <figure class="selected-image selected-three">
+            <img
+              src="assets/home/sammi-shot-that-atlanta-festival-photographer-05.jpg"
+              alt="Selected photography by Sammi Shot That"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+    </main>
 
-
-      <div class="selected-grid">
-
-        <figure class="selected-image selected-one">
-          <img
-            src="assets/home/sammi-shot-that-atlanta-festival-photographer-04.jpg"
-            alt="Selected photography by Sammi Shot That"
-            loading="lazy"
-          >
-        </figure>
-
-        <figure class="selected-image selected-two">
-          <img
-            src="assets/home/sammi-shot-that-atlanta-festival-photographer-06.jpg"
-            alt="Selected photography by Sammi Shot That"
-            loading="lazy"
-          >
-        </figure>
-
-        <figure class="selected-image selected-three">
-          <img
-            src="assets/home/sammi-shot-that-atlanta-festival-photographer-05.jpg"
-            alt="Selected photography by Sammi Shot That"
-            loading="lazy"
-          >
-        </figure>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-
-  <!-- ==========================================
+    <!-- ==========================================
        FOOTER
   =========================================== -->
 
-  <footer class="site-footer">
+    <footer class="site-footer">
+      <div class="footer-main">
+        <h2>
+          Have something<br />
+          worth capturing?
+        </h2>
 
-    <div class="footer-main">
-
-      <h2>
-        Have something<br>
-        worth capturing?
-      </h2>
-
-      <a href="book.html" class="footer-book">
-        Book Me
-        <span aria-hidden="true">↗</span>
-      </a>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-      <div>
-        <p class="footer-logo">
-          Sammi Shot That
-        </p>
-
-        <p>Atlanta, GA</p>
+        <a href="book.html" class="footer-book">
+          Book Me
+          <span aria-hidden="true">↗</span>
+        </a>
       </div>
 
+      <div class="footer-bottom">
+        <div>
+          <p class="footer-logo">Sammi Shot That</p>
 
-      <div class="footer-links">
+          <p>Atlanta, GA</p>
+        </div>
 
-        <!-- Replace with your actual links -->
+        <div class="footer-links">
+          <!-- Replace with your actual links -->
 
-        <a
-          href="https://www.instagram.com/sammishotthat/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram ↗
-        </a>
+          <a
+            href="https://www.instagram.com/sammishotthat/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram ↗
+          </a>
 
-        <a
-          href="https://www.vibewithsammi.com/linktree"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Linktree ↗
-        </a>
+          <a
+            href="https://www.vibewithsammi.com/linktree"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Linktree ↗
+          </a>
+        </div>
 
+        <p class="footer-copyright">© 2026 Sammi Shot That</p>
       </div>
+    </footer>
 
-
-      <p class="footer-copyright">
-        © 2026 Sammi Shot That
-      </p>
-
-    </div>
-
-  </footer>
-
-
-  <script src="js/main.js"></script>
-
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

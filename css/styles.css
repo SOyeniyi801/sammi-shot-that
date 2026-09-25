@@ -2406,3 +2406,831 @@ body.loaded .hero-photo-three {
   }
 
 }
+
+
+/* ==========================================================
+   13. RECENT WORK
+========================================================== */
+
+
+/* ------------------------------
+   PAGE INTRO
+------------------------------ */
+
+.recent-intro {
+  padding:
+    clamp(5rem, 10vw, 9rem)
+    var(--page-padding)
+    clamp(7rem, 12vw, 11rem);
+}
+
+
+.recent-eyebrow {
+  margin: 0 0 2rem;
+
+  font-size: 0.68rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+
+.recent-intro h1 {
+  margin: 0;
+
+  font-family: var(--display);
+
+  font-size:
+    clamp(4.5rem, 11vw, 11rem);
+
+  line-height: 0.84;
+  letter-spacing: -0.03em;
+}
+
+
+.recent-intro-copy {
+  width: min(100%, 430px);
+
+  margin:
+    clamp(2.5rem, 5vw, 4rem)
+    0
+    0
+    auto;
+
+  font-size:
+    clamp(0.9rem, 1.15vw, 1.05rem);
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================================
+   PROJECT
+========================================================== */
+
+.recent-project {
+  position: relative;
+
+  margin:
+    0
+    var(--page-padding);
+
+  padding:
+    clamp(5rem, 9vw, 8rem)
+    0
+    clamp(8rem, 14vw, 13rem);
+
+  border-top: 1px solid var(--line);
+}
+
+
+.recent-project-number {
+  margin-bottom:
+    clamp(3rem, 6vw, 5rem);
+
+  font-family: var(--display);
+  font-size: 0.8rem;
+
+  opacity: 0.45;
+}
+
+
+/* ------------------------------
+   PROJECT HEADER
+------------------------------ */
+
+.recent-project-header {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.4fr)
+    minmax(300px, 0.6fr);
+
+  align-items: end;
+
+  gap:
+    clamp(3rem, 8vw, 8rem);
+}
+
+
+.recent-project-type {
+  margin: 0 0 1.25rem;
+
+  font-size: 0.65rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  opacity: 0.65;
+}
+
+
+.recent-project-title h2 {
+  margin: 0;
+
+  font-family: var(--display);
+
+  font-size:
+    clamp(2.7rem, 6vw, 6.5rem);
+
+  line-height: 0.94;
+}
+
+
+.recent-project-title h2 span {
+  display: block;
+}
+
+
+/* ------------------------------
+   PROJECT INFO
+------------------------------ */
+
+.recent-project-info {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap:
+    2rem
+    1.5rem;
+}
+
+
+.recent-info-item {
+  padding-top: 0.75rem;
+
+  border-top:
+    1px solid var(--line);
+}
+
+
+.recent-info-item span {
+  display: block;
+
+  margin-bottom: 0.55rem;
+
+  font-size: 0.6rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+
+  opacity: 0.5;
+}
+
+
+.recent-info-item p {
+  margin: 0;
+
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+
+/* ------------------------------
+   SUMMARY
+------------------------------ */
+
+.recent-project-summary {
+  width: min(100%, 900px);
+
+  display: grid;
+
+  grid-template-columns:
+    150px
+    1fr;
+
+  gap:
+    clamp(2rem, 5vw, 5rem);
+
+  margin:
+    clamp(5rem, 10vw, 9rem)
+    0;
+}
+
+
+.recent-summary-label {
+  padding-top: 0.4rem;
+
+  font-size: 0.65rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+
+.recent-project-summary p {
+  margin: 0;
+
+  font-size:
+    clamp(1.15rem, 2vw, 1.8rem);
+
+  line-height: 1.5;
+}
+
+
+/* ==========================================================
+   PHOTO GRID — SHARED
+========================================================== */
+
+.recent-gallery {
+  width: 100%;
+}
+
+
+.recent-photo {
+  margin: 0;
+
+  padding: 0.45rem;
+
+  background: var(--white);
+
+  box-shadow: var(--shadow-soft);
+
+  overflow: hidden;
+
+  transition:
+    transform 250ms ease,
+    box-shadow 250ms ease;
+}
+
+
+.recent-photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 450ms ease;
+}
+
+
+.recent-photo:hover {
+  z-index: 3;
+
+  transform: translateY(-5px);
+
+  box-shadow: var(--shadow-medium);
+}
+
+
+.recent-photo:hover img {
+  transform: scale(1.015);
+}
+
+
+/* ==========================================================
+   RENDERATL GALLERY
+========================================================== */
+
+.recent-gallery-render {
+  display: grid;
+
+  grid-template-columns:
+    1.25fr
+    0.75fr;
+
+  grid-template-rows:
+    repeat(2, minmax(220px, 30vw))
+    minmax(250px, 35vw);
+
+  gap:
+    clamp(1rem, 2vw, 1.5rem);
+}
+
+
+.recent-gallery-render
+.recent-photo-large {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+
+.recent-gallery-render
+.recent-photo-top {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+
+.recent-gallery-render
+.recent-photo-bottom {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+
+.recent-gallery-render
+.recent-photo-wide {
+  grid-column: 1 / -1;
+  grid-row: 3;
+}
+
+
+/* ==========================================================
+   BIT GALLERY
+========================================================== */
+
+.recent-gallery-bit {
+  display: grid;
+
+  grid-template-columns:
+    repeat(12, 1fr);
+
+  grid-template-rows:
+    repeat(2, minmax(280px, 35vw));
+
+  gap:
+    clamp(1rem, 2vw, 1.5rem);
+}
+
+
+.recent-gallery-bit
+.recent-photo-one {
+  grid-column: 1 / 6;
+  grid-row: 1;
+}
+
+
+.recent-gallery-bit
+.recent-photo-two {
+  grid-column: 6 / 13;
+  grid-row: 1;
+}
+
+
+.recent-gallery-bit
+.recent-photo-three {
+  grid-column: 1 / 8;
+  grid-row: 2;
+}
+
+
+.recent-gallery-bit
+.recent-photo-four {
+  grid-column: 8 / 13;
+  grid-row: 2;
+}
+
+
+/* ==========================================================
+   VIDEO
+========================================================== */
+
+.recent-video-section {
+  margin-top:
+    clamp(6rem, 11vw, 10rem);
+}
+
+
+.recent-media-heading {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 1rem;
+
+  padding-bottom: 0.75rem;
+
+  border-bottom:
+    1px solid var(--line);
+
+  font-size: 0.65rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+
+.recent-video-wrap {
+  width: 100%;
+
+  padding: 0.45rem;
+
+  background: var(--white);
+
+  box-shadow: var(--shadow-soft);
+}
+
+
+.recent-video-wrap video {
+  width: 100%;
+  max-height: 80vh;
+
+  background: #000;
+
+  object-fit: contain;
+}
+
+
+/* ==========================================================
+   RECENT WORK — TABLET
+========================================================== */
+
+@media (max-width: 900px) {
+
+  .recent-project-header {
+    grid-template-columns: 1fr;
+
+    gap: 3rem;
+  }
+
+
+  .recent-project-info {
+    width: min(100%, 600px);
+  }
+
+
+  .recent-project-summary {
+    margin:
+      5rem
+      0;
+  }
+
+
+  .recent-gallery-render {
+    grid-template-rows:
+      repeat(2, minmax(200px, 40vw))
+      minmax(250px, 45vw);
+  }
+
+
+  .recent-gallery-bit {
+    grid-template-rows:
+      repeat(2, minmax(250px, 42vw));
+  }
+
+}
+
+
+/* ==========================================================
+   RECENT WORK — MOBILE
+========================================================== */
+
+@media (max-width: 650px) {
+
+  .recent-intro {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+  }
+
+
+  .recent-intro h1 {
+    font-size:
+      clamp(4rem, 20vw, 6rem);
+  }
+
+
+  .recent-intro-copy {
+    margin-left: 0;
+  }
+
+
+  .recent-project {
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+  }
+
+
+  .recent-project-number {
+    margin-bottom: 2.5rem;
+  }
+
+
+  .recent-project-title h2 {
+    font-size:
+      clamp(2.6rem, 13vw, 4rem);
+  }
+
+
+  .recent-project-info {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap:
+      1.75rem
+      1rem;
+  }
+
+
+  .recent-project-summary {
+    grid-template-columns: 1fr;
+
+    gap: 1.25rem;
+
+    margin:
+      4rem
+      0;
+  }
+
+
+  .recent-project-summary p {
+    font-size:
+      clamp(1.05rem, 5vw, 1.35rem);
+  }
+
+
+  /* RENDER MOBILE */
+
+  .recent-gallery-render {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    grid-template-rows: auto;
+
+    gap: 0.75rem;
+  }
+
+
+  .recent-gallery-render
+  .recent-photo-large {
+    grid-column: 1 / -1;
+    grid-row: auto;
+
+    aspect-ratio: 4 / 5;
+  }
+
+
+  .recent-gallery-render
+  .recent-photo-top,
+  .recent-gallery-render
+  .recent-photo-bottom {
+    grid-column: auto;
+    grid-row: auto;
+
+    aspect-ratio: 3 / 4;
+  }
+
+
+  .recent-gallery-render
+  .recent-photo-wide {
+    grid-column: 1 / -1;
+    grid-row: auto;
+
+    aspect-ratio: 16 / 10;
+  }
+
+
+  /* BIT MOBILE */
+
+  .recent-gallery-bit {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    grid-template-rows: auto;
+
+    gap: 0.75rem;
+  }
+
+
+  .recent-gallery-bit
+  .recent-photo-one,
+  .recent-gallery-bit
+  .recent-photo-two,
+  .recent-gallery-bit
+  .recent-photo-three,
+  .recent-gallery-bit
+  .recent-photo-four {
+    grid-column: auto;
+    grid-row: auto;
+
+    aspect-ratio: 3 / 4;
+  }
+
+
+  .recent-gallery-bit
+  .recent-photo-two {
+    grid-column: 1 / -1;
+
+    aspect-ratio: 4 / 3;
+  }
+
+
+  .recent-video-section {
+    margin-top: 5rem;
+  }
+
+}
+
+/* ==========================================================
+   RECENT WORK — YOUTUBE EMBED
+========================================================== */
+
+.recent-youtube-wrap {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  padding: 0.45rem;
+
+  background: var(--white);
+
+  box-shadow: var(--shadow-soft);
+}
+
+
+.recent-youtube-wrap iframe {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  border: 0;
+}
+
+
+/* ==========================================================
+   RECENT WORK — SOCIAL MEDIA PROJECT
+========================================================== */
+
+.recent-social-feature {
+  margin-top:
+    clamp(5rem, 10vw, 9rem);
+
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+
+/* ------------------------------
+   SOCIAL LABEL
+------------------------------ */
+
+.recent-social-label {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding:
+    1rem
+    0;
+
+  border-bottom:
+    1px solid var(--line);
+
+  font-size: 0.65rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+
+/* ------------------------------
+   SOCIAL CONTENT
+------------------------------ */
+
+.recent-social-content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.2fr)
+    minmax(250px, 0.6fr);
+
+  align-items: end;
+
+  gap:
+    clamp(3rem, 8vw, 8rem);
+
+  padding:
+    clamp(4rem, 8vw, 7rem)
+    0;
+}
+
+
+.recent-social-content h3 {
+  margin: 0;
+
+  font-family: var(--display);
+
+  font-size:
+    clamp(3rem, 7vw, 7rem);
+
+  line-height: 0.92;
+}
+
+
+.recent-social-content h3 span {
+  display: block;
+}
+
+
+.recent-social-content p {
+  margin:
+    0
+    0
+    2rem;
+
+  font-size:
+    clamp(0.85rem, 1vw, 1rem);
+
+  line-height: 1.65;
+}
+
+
+/* ------------------------------
+   INSTAGRAM LINK
+------------------------------ */
+
+.recent-social-link {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 2rem;
+
+  width: 100%;
+
+  padding:
+    1rem
+    1.1rem;
+
+  border:
+    1px solid var(--ink);
+
+  color: var(--ink);
+
+  font-size: 0.7rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  text-decoration: none;
+
+  transition:
+    background var(--transition),
+    color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+
+.recent-social-link > span {
+  font-size: 1rem;
+
+  transition:
+    transform var(--transition);
+}
+
+
+.recent-social-link:hover {
+  background: var(--ink);
+  color: var(--background);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    5px 5px 0 rgba(56, 65, 61, 0.15);
+}
+
+
+.recent-social-link:hover > span {
+  transform:
+    translate(3px, -3px);
+}
+
+
+/* ==========================================================
+   SOCIAL PROJECT — MOBILE
+========================================================== */
+
+@media (max-width: 650px) {
+
+  .recent-social-content {
+    grid-template-columns: 1fr;
+
+    align-items: start;
+
+    gap: 3rem;
+
+    padding:
+      4rem
+      0;
+  }
+
+
+  .recent-social-content h3 {
+    font-size:
+      clamp(2.8rem, 14vw, 4.5rem);
+  }
+
+
+  .recent-social-link {
+    width: 100%;
+  }
+
+}
