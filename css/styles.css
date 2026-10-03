@@ -1053,6 +1053,139 @@ body.loaded .hero-photo-three {
   transform: rotate(-1.5deg);
 }
 
+/* ==========================================================
+   TESTIMONIALS
+========================================================== */
+
+.testimonials {
+  padding:
+    clamp(5rem, 9vw, 8rem)
+    var(--page-padding)
+    clamp(7rem, 12vw, 10rem);
+}
+
+
+/* ------------------------------
+   HEADING
+------------------------------ */
+
+.testimonials-heading {
+  margin-bottom:
+    clamp(3rem, 6vw, 5rem);
+}
+
+
+.testimonials-label {
+  margin:
+    0 0 1.25rem;
+
+  font-size: 0.68rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+
+.testimonials-heading h2 {
+  margin: 0;
+
+  font-family: var(--display);
+
+  font-size:
+    clamp(2.5rem, 5vw, 5.5rem);
+
+  line-height: 0.95;
+}
+
+
+/* ------------------------------
+   GRID
+------------------------------ */
+
+.testimonials-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+
+/* ------------------------------
+   TESTIMONIAL
+------------------------------ */
+
+.testimonial {
+  min-height: 320px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding:
+    1.5rem
+    clamp(1rem, 3vw, 2.5rem)
+    2rem;
+}
+
+
+.testimonial + .testimonial {
+  border-left:
+    1px solid var(--line);
+}
+
+
+.testimonial-number {
+  align-self: flex-end;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+
+  opacity: 0.5;
+}
+
+
+.testimonial blockquote {
+  margin:
+    auto 0 3rem;
+
+  font-size:
+    clamp(1rem, 1.5vw, 1.35rem);
+
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+
+.testimonial-meta {
+  padding-top: 1rem;
+
+  border-top:
+    1px solid var(--line);
+}
+
+
+.testimonial-name {
+  margin:
+    0 0 0.35rem;
+
+  font-weight: 800;
+}
+
+
+.testimonial-service {
+  margin: 0;
+
+  font-size: 0.7rem;
+
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  opacity: 0.6;
+}
+
 
 /* ==========================================================
    05. GALLERY
