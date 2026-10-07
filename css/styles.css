@@ -3532,6 +3532,26 @@ body.loaded .hero-photo-three {
   opacity: 0.6;
 }
 
+/* ------------------------------
+   SERVICE PRICING TIERS
+------------------------------ */
+
+.service-tiers {
+  margin-top: 1.25rem;
+}
+
+.service-tiers p {
+  margin-bottom: 0.65rem;
+}
+
+.service-tiers p:last-child {
+  margin-bottom: 0;
+}
+
+.service-tiers strong {
+  font-weight: 700;
+}
+
 
 /* ------------------------------
    PRICING
@@ -3582,8 +3602,6 @@ body.loaded .hero-photo-three {
   padding:
     clamp(4rem, 8vw, 7rem)
     0;
-
-  border-top: 1px solid var(--line);
 }
 
 
