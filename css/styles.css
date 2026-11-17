@@ -3783,3 +3783,24 @@ body.loaded .hero-photo-three {
   }
 
 }
+
+.bit-interview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 360px));
+  justify-content: center;
+  gap: 24px;
+}
+
+.bit-interview-grid video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  background: #000;
+}
+
+@media (max-width: 600px) {
+  .bit-interview-grid {
+    grid-template-columns: minmax(0, 360px);
+  }
+}
